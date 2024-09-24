@@ -1,0 +1,28 @@
+def palabra_mas_comun(texto):
+    
+    texto = texto.lower()
+    for char in '-.,\n':
+        texto = texto.replace(char, ' ')
+    palabras = texto.split()
+
+    
+    conteo_palabras = {}
+    for palabra in palabras:
+        if palabra in conteo_palabras:
+            conteo_palabras[palabra] += 1
+        else:
+            conteo_palabras[palabra] = 1
+
+    
+    palabra_comun = max(conteo_palabras, key=conteo_palabras.get)
+    frecuencia = conteo_palabras[palabra_comun]
+
+    return palabra_comun, frecuencia
+
+
+texto = """Los exploradores descubren un manuscrito antiguo y desean encontrar la
+palabra más común en él. Este manuscrito contiene muchas palabras antiguas y misteriosas."""
+palabra, frecuencia = palabra_mas_comun(texto)
+print(f"La palabra más común es '{palabra}' con una frecuencia de {frecuencia}.")
+
+

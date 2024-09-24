@@ -1,0 +1,14 @@
+
+monedas_de_oro = [10, 25, 50, 150, 900]
+
+
+suma_total = sum(monedas_de_oro)
+
+
+promedio = suma_total / len(monedas_de_oro)
+
+moneda_mas_valiosa = max(monedas_de_oro)
+
+print("Suma total de monedas de oro:", suma_total)
+print("Promedio de valor de las monedas de oro:", promedio)
+print("Moneda más valiosa:", moneda_mas_valiosa)

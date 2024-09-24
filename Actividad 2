@@ -1,0 +1,10 @@
+cristales_preciosos = ["Rubí", "Esmeralda", "Zafiro", "Diamante"]
+
+
+cristales_unicos = set(cristales_preciosos)
+
+
+cristales_unicos_lista = list(cristales_unicos)
+
+print("Lista de cristales preciosos original:", cristales_preciosos)
+print("Lista de cristales preciosos únicos:", cristales_unicos_lista)

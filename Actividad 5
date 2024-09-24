@@ -1,0 +1,6 @@
+
+
+coordenadas_lago = (8, 6)  # Por ejemplo, el lago está en la posición (8, 6)
+
+
+print("Coordenadas del lago:", coordenadas_lago)
